@@ -6,5 +6,3 @@ import {
 } from "./modules/updatePrice";
 
 populateSelectors();
-
-setTimeout(updatePrice, 600);
