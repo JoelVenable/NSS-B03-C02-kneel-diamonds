@@ -4,22 +4,26 @@
 module.exports.updatePrice = () => {
   const priceHeader = document.getElementById("showPrice");
 
-  function getValues(elementId) {
+  function getSelectedOption(elementId) {
     const element = document.getElementById(elementId);
-    return element.querySelector(`[value="${element.value}"]`)
-      .getAttribute("data-price");
+    return element.querySelector(`[value="${element.value}"]`);
   }
-
-  const options = [
-    getValues("metals-selector"),
-    getValues("diamonds-selector"),
-    getValues("style-selector")
-  ];
-  let price = 0;
-  options.forEach(option => {
-    price += parseFloat(option);
-  });
-  price = `$${price.toFixed(2)}`;
-  priceHeader.innerHTML = `Price: ${price}`;
-
+  const optionPicks = {
+    style: getSelectedOption("style-selector"),
+    carets: getSelectedOption("diamonds-selector"),
+    metal: getSelectedOption("metals-selector")
+  };
+  let output = {
+    price: 0
+  };
+  for (const key in optionPicks) {
+    if (optionPicks.hasOwnProperty(key)) {
+      const element = optionPicks[key];
+      output[key] = element.textContent;
+      output.price += parseFloat(element.getAttribute("data-price"));
+    }
+  }
+  let formattedPrice = `$${output.price.toFixed(2)}`;
+  priceHeader.innerHTML = `Price: ${formattedPrice}`;
+  return output;
 };

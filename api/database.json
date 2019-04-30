@@ -1,57 +1,117 @@
 {
-  "metals": [{
-    "id": 1,
-    "metal": "Sterling Silver",
-    "price": 12.42
-  }, {
-    "id": 2,
-    "metal": "14K Gold",
-    "price": 736.4
-  }, {
-    "id": 3,
-    "metal": "24K Gold",
-    "price": 1258.9
-  }, {
-    "id": 4,
-    "metal": "Platinum",
-    "price": 795.45
-  }, {
-    "id": 5,
-    "metal": "Palladium",
-    "price": 1241
-  }],
-  "diamonds": [{
-    "id": 1,
-    "carets": 0.5,
-    "price": 405
-  }, {
-    "id": 2,
-    "carets": 0.75,
-    "price": 782
-  }, {
-    "id": 3,
-    "carets": 1,
-    "price": 1470
-  }, {
-    "id": 4,
-    "carets": 1.5,
-    "price": 1997
-  }, {
-    "id": 5,
-    "carets": 2,
-    "price": 3638
-  }],
-  "ringStyles": [{
-    "id": 1,
-    "style": "Classic",
-    "price": 500
-  }, {
-    "id": 2,
-    "style": "Modern",
-    "price": 710
-  }, {
-    "id": 3,
-    "style": "Vintage",
-    "price": 965
-  }]
+  "metals": [
+    {
+      "id": 1,
+      "metal": "Sterling Silver",
+      "price": 12.42
+    },
+    {
+      "id": 2,
+      "metal": "14K Gold",
+      "price": 736.4
+    },
+    {
+      "id": 3,
+      "metal": "24K Gold",
+      "price": 1258.9
+    },
+    {
+      "id": 4,
+      "metal": "Platinum",
+      "price": 795.45
+    },
+    {
+      "id": 5,
+      "metal": "Palladium",
+      "price": 1241
+    }
+  ],
+  "diamonds": [
+    {
+      "id": 1,
+      "carets": 0.5,
+      "price": 405
+    },
+    {
+      "id": 2,
+      "carets": 0.75,
+      "price": 782
+    },
+    {
+      "id": 3,
+      "carets": 1,
+      "price": 1470
+    },
+    {
+      "id": 4,
+      "carets": 1.5,
+      "price": 1997
+    },
+    {
+      "id": 5,
+      "carets": 2,
+      "price": 3638
+    }
+  ],
+  "ringStyles": [
+    {
+      "id": 1,
+      "style": "Classic",
+      "price": 500
+    },
+    {
+      "id": 2,
+      "style": "Modern",
+      "price": 710
+    },
+    {
+      "id": 3,
+      "style": "Vintage",
+      "price": 965
+    }
+  ],
+  "orders": [
+    {
+      "style": "\n        \n      ClassicModernVintage",
+      "carets": "\n        \n      0.50.7511.52",
+      "metal": "\n        \n      Sterling Silver14K Gold24K GoldPlatinumPalladium",
+      "price": 917.4200000000001,
+      "id": 1
+    },
+    {
+      "style": "\n        \n      ClassicModernVintage",
+      "carets": "\n        \n      0.50.7511.52",
+      "metal": "\n        \n      Sterling Silver14K Gold24K GoldPlatinumPalladium",
+      "price": null,
+      "id": 2
+    },
+    {
+      "style": "\n        \n      ClassicModernVintage",
+      "carets": "\n        \n      0.50.7511.52",
+      "metal": "\n        \n      Sterling Silver14K Gold24K GoldPlatinumPalladium",
+      "price": null,
+      "id": 3
+    },
+    {
+      "style": "\n        \n      ClassicModernVintage",
+      "carets": "\n        \n      0.50.7511.52",
+      "metal": "\n        \n      Sterling Silver14K Gold24K GoldPlatinumPalladium",
+      "price": null,
+      "id": 4
+    },
+    {
+      "style": "\n        \n      ClassicModernVintage",
+      "carets": "\n        \n      0.50.7511.52",
+      "metal": "\n        \n      Sterling Silver14K Gold24K GoldPlatinumPalladium",
+      "price": null,
+      "id": 5
+    },
+    {
+      "price": 917.42,
+      "style": "Classic",
+      "carets": "0.5",
+      "metal": "Sterling Silver",
+      "id": 6
+    }
+  ]
 }

@@ -2,7 +2,10 @@ import {
   populateSelectors
 } from "./modules/populateSelectors";
 import {
-  updatePrice
-} from "./modules/updatePrice";
+  pushPrice
+} from "./modules/pushPrice";
 
 populateSelectors();
+
+document.getElementById("addToCart")
+  .addEventListener("click", pushPrice);
