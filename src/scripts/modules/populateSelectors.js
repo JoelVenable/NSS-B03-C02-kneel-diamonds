@@ -14,7 +14,7 @@ module.exports.populateSelectors = () => {
 
   function getOptions(selectorElementId, endpoint, objectNameKey) {
     const selectorElement = document.getElementById(selectorElementId);
-    API.getLocalData(endpoint)
+    return API.getLocalData(endpoint)
       .then(items => {
         items.forEach(item => {
           selectorElement.innerHTML += buildOption(item[objectNameKey], item.id, item.price);
@@ -23,7 +23,9 @@ module.exports.populateSelectors = () => {
       .then(selectorElement.addEventListener("change", updatePrice));
   }
 
-  getOptions("metals-selector", "metals", "metal");
-  getOptions("diamonds-selector", "diamonds", "carets");
-  getOptions("style-selector", "ringStyles", "style");
+  Promise.all([
+    getOptions("metals-selector", "metals", "metal"),
+    getOptions("diamonds-selector", "diamonds", "carets"),
+    getOptions("style-selector", "ringStyles", "style")
+  ]).then(updatePrice);
 };
