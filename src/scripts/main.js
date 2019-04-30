@@ -1,3 +1,5 @@
-import API from "./modules/API.js";
+import {
+  populateSelectors
+} from "./modules/populateSelectors";
 
-alert("bounce");
+populateSelectors();

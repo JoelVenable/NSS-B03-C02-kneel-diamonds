@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-  </head>
-  <body>
 
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
 
-    
-    <script src="bundle.js"></script>
-    <script src="http://localhost:35729/livereload.js"></script>
-  </body>
+<body>
+
+  <h1>Custom Ring Maker</h1>
+  <form action="submit">
+    <div>
+      <label for="metals-selector">Select metal type:</label>
+      <select name="metals" id="metals-selector">
+        <!-- options built with JS -->
+      </select>
+    </div>
+    <div>
+      <label for="diamonds-selector">Choose your Diamond size:</label>
+      <select name="diamonds" id="diamonds-selector">
+        <!-- options built with JS -->
+      </select>
+    </div>
+    <div>
+      <label for="style-selector">Choose your Ring Style:</label>
+      <select name="ringStyle" id="style-selector">
+        <!-- options built with JS -->
+      </select>
+    </div>
+  </form>
+
+
+  <script src="bundle.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+
 </html>
